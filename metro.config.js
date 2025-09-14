@@ -12,7 +12,15 @@ config.resolver.blockList = [
   /\.git\/.*/,
 ];
 
-// Reduce the number of files being watched
+// Ensure proper resolution for nested node_modules
+config.resolver.nodeModulesPaths = [
+  require("path").resolve(__dirname, "node_modules"),
+];
+
+// Clear watchFolders to avoid conflicts
 config.watchFolders = [];
+
+// Reset cache on start
+config.resetCache = true;
 
 module.exports = config;
