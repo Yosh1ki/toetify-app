@@ -1,0 +1,11 @@
+{
+  "ignore_dirs": [
+    "node_modules",
+    ".git",
+    ".expo",
+    "volumes",
+    "supabase/logs",
+    "supabase/storage",
+    "supabase/db"
+  ]
+}
