@@ -22,5 +22,3 @@ export function ExternalLink({ href, ...rest }: Props) {
     />
   );
 }
-
-export const openBrowserAsync = openBrowserAsync;

@@ -1,6 +1,5 @@
 import { StyleSheet, ScrollView } from "react-native";
 
-import { ConnectionTest } from "@/components/ConnectionTest";
 import { Text, View } from "@/components/Themed";
 
 export default function TabOneScreen() {
@@ -15,7 +14,7 @@ export default function TabOneScreen() {
           darkColor="rgba(255,255,255,0.1)"
         />
 
-        <ConnectionTest />
+        <Text style={styles.infoTitle}>アプリが正常に起動しました！</Text>
 
         <View style={styles.infoContainer}>
           <Text style={styles.infoTitle}>✅ 完了したタスク</Text>
